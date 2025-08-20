@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InvoicePro - Features</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .animate-marquee {
+      animation: marquee 30s linear infinite;
+    }
+    .slider-image {
+      height: 220px; /* Mobile-friendly */
+      width: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    @media (min-width: 768px) {
+      .slider-image {
+        height: 320px; /* Desktop larger size */
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar with background image and text overlay -->
+  <nav class="bg-cover bg-center text-white" style="background-image: url('images/background.jpg');background-size: 170%;">
+    <div class="bg-black bg-opacity-60 py-6 px-6 md:px-12 text-center">
+      <h1 class="text-2xl md:text-4xl font-bold">All-in-One Features</h1>
+      <p class="text-sm md:text-lg mt-2">Empowering small businesses with everything needed to create, manage, and send invoices</p>
+    </div>
+  </nav>
+
+  <!-- Seamless Infinite Image Slider -->
+  <div class="relative overflow-hidden border-b border-gray-200 bg-white">
+    <!-- First loop -->
+    <div class="flex w-max animate-marquee space-x-4">
+      <img src="images/create-professional-invoice-2x.webp" class="slider-image" alt="Image 1">
+      <img src="images/agencies-2x.webp" class="slider-image" alt="Image 2">
+      <img src="images/ChatGPT Image Apr 24, 2025, 04_52_56 AM.png" class="slider-image" alt="Image 3">
+      <img src="images/ChatGPT Image Apr 24, 2025, 05_29_57 AM.png" class="slider-image" alt="Image 4">
+    </div>
+    <!-- Duplicate loop -->
+    <div class="flex w-max animate-marquee space-x-4 absolute top-0 left-full">
+      <img src="images/create-professional-invoice-2x.webp" class="slider-image" alt="Image 1 Duplicate">
+      <img src="images/agencies-2x.webp" class="slider-image" alt="Image 2 Duplicate">
+      <img src="images/ChatGPT Image Apr 24, 2025, 05_17_12 AM.png" class="slider-image" alt="Image 3 Duplicate">
+      <img src="images/ChatGPT Image Apr 24, 2025, 05_29_57 AM.png" class="slider-image" alt="Image 4 Duplicate">
+    </div>
+  </div>
+
+  <!-- Feature Grid -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Feature Box 1 -->
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+          <a href="Quickinvoice.html" class="block"> 
+            <img src="images/bd2867b65667762c0a42e8359e9b5f51.jpg" class="w-full h-48 md:h-64 mb-4 rounded-lg object-cover transition-transform duration-300 transform hover:scale-105">
+            <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">Quick Invoice Creation</h3>
+            <p class="text-sm md:text-base text-gray-600">Generate professional invoices in minutes with your logo, terms, and custom fields.</p>
+          </a>
+        </div>
+
+        <!-- Feature Box 2 -->
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+          <a href="RealTRACKING.html" class="block"> 
+            <img src="images/Blue and Red Geometric Graphic Design Invoice.jpg" alt="Real-Time Tracking" class="w-full h-48 md:h-64 mb-4 rounded-lg object-cover transition-transform duration-300 transform hover:scale-105">
+            <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">Real-Time Tracking</h3>
+            <p class="text-sm md:text-base text-gray-600">Track invoice status, due dates, and client payments with smart reminders.</p>
+          </a>
+        </div>
+
+        <!-- Feature Box 3 -->
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+          <a href="Onlinepayment.html" class="block"> 
+            <img src="images/1c1d19efac39ca75f1018b1f8c59fd0f.jpg" alt="Online Payment Options" class="w-full h-48 md:h-64 mb-4 rounded-lg object-cover transition-transform duration-300 transform hover:scale-105">
+            <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">Online Payment Options</h3>
+            <p class="text-sm md:text-base text-gray-600">Accept payments via card, bank, or wallet integrations with ease.</p>
+          </a>
+        </div>
+
+        <!-- Feature Box 4 -->
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+          <a href="CleintMangment.html" class="block"> 
+            <img src="images/f791dbeefc2b9897b3f9e2bbc1b64fd6.jpg" alt="Client Management" class="w-full h-48 md:h-64 mb-4 rounded-lg object-cover transition-transform duration-300 transform hover:scale-105">
+            <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">Client Management</h3>
+            <p class="text-sm md:text-base text-gray-600">Store client details, contact info, and payment history in one place.</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="text-center py-12 bg-white">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Ready to simplify your invoicing?</h2>
+    <a href="signup.html" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-md hover:bg-blue-700 transition text-sm md:text-base">
+      Sign Up Free
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center text-gray-500 py-6 text-xs md:text-sm">
+    &copy; 2025 InvoicePro. All rights reserved.
+  </footer>
+
+</body>
+</html>
